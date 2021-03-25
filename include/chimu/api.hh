@@ -15,6 +15,12 @@ namespace Chimu
     enum APIError
     {
         Unknown = 0,
+        IntError = 101,
+        KeyRequired = 102,
+        StateNotSet = 103,
+        BeatmapNotFound = 104,
+        BeatmapUnavailable = 105,
+        NoSearchResults = 106,
     };
 
     class APIException : public std::exception
